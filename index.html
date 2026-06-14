@@ -138,6 +138,38 @@
     font-weight: bold;
   }
 
+  .blog-table-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .blog-table-link:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .blog-table-link table.info {
+    border: none;
+  }
+  .blog-table-link table.info tr:first-child th,
+  .blog-table-link table.info tr:first-child td {
+    border-top: none;
+  }
+  .blog-table-link table.info tr th:first-child,
+  .blog-table-link table.info tr td:first-child {
+    border-left: none;
+  }
+  .blog-table-link table.info tr th:last-child,
+  .blog-table-link table.info tr td:last-child {
+    border-right: none;
+  }
+  .blog-table-link table.info tr:last-child th,
+  .blog-table-link table.info tr:last-child td {
+    border-bottom: none;
+  }
+
   footer {
     background: #000;
     color: #ccc;
@@ -246,13 +278,15 @@
 
 <section id="blog">
   <h2>リフォームＢＬＯＧ</h2>
-  <table class="info">
-    <tr><th>2024.01.23</th><td><strong>２０２４年</strong><br>本年もどうぞよろしくお願いいたします。株式会社大棟工藝 スタッフ一同</td></tr>
-    <tr><th>2021.08.10</th><td><strong>宝箱（木工体験セット）完売いたしました。</strong><br>完売いたしました。ありがとうございました。</td></tr>
-    <tr><th>2020.06.25</th><td><strong>火災保険の大切さを知った2018年の台風災害</strong><br>火災保険の補償内容の確認をお勧めいたします。2年前の2018年の台風災害はすさまじい被害をもたらしました。</td></tr>
-    <tr><th>2020.06.24</th><td><strong>2020年 大規模感染リスクを低減するための高機能換気設備等の導入支援事業(環境省)</strong><br>換気設備や空調設備の更新をお考えの方への支援事業のご紹介です。</td></tr>
-    <tr><th>2020.06.24</th><td><strong>株式会社大棟工藝 ホームページ開設</strong><br>この度株式会社大棟工藝のホームページを開設いたしました。お客様の住まいやお店のご要望を実現するために様々な情報を発信してまいります。</td></tr>
-  </table>
+  <a class="blog-table-link" href="https://daitojr.livedoor.blog/" target="_blank" rel="noopener">
+    <table class="info">
+      <tr><th>2024.01.23</th><td><strong>２０２４年</strong><br>本年もどうぞよろしくお願いいたします。株式会社大棟工藝 スタッフ一同</td></tr>
+      <tr><th>2021.08.10</th><td><strong>宝箱（木工体験セット）完売いたしました。</strong><br>完売いたしました。ありがとうございました。</td></tr>
+      <tr><th>2020.06.25</th><td><strong>火災保険の大切さを知った2018年の台風災害</strong><br>火災保険の補償内容の確認をお勧めいたします。2年前の2018年の台風災害はすさまじい被害をもたらしました。</td></tr>
+      <tr><th>2020.06.24</th><td><strong>2020年 大規模感染リスクを低減するための高機能換気設備等の導入支援事業(環境省)</strong><br>換気設備や空調設備の更新をお考えの方への支援事業のご紹介です。</td></tr>
+      <tr><th>2020.06.24</th><td><strong>株式会社大棟工藝 ホームページ開設</strong><br>この度株式会社大棟工藝のホームページを開設いたしました。お客様の住まいやお店のご要望を実現するために様々な情報を発信してまいります。</td></tr>
+    </table>
+  </a>
 </section>
 
 <section id="shop">
