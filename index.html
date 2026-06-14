@@ -49,20 +49,17 @@
   nav a:hover { color: var(--accent); }
 
   .hero {
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-      url('https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/1000699/4b290ef5f765d1dd1003fd9c512d4a72_76cce30ec5f1078466c87e67d32d848d.jpg') center/cover no-repeat;
+    background: url('https://cdn.amebaowndme.com/madrid-prd/madrid-web/images/sites/1000699/4b290ef5f765d1dd1003fd9c512d4a72_76cce30ec5f1078466c87e67d32d848d.jpg') center/cover no-repeat;
     height: 360px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    padding: 0 20px;
   }
-  .hero p {
-    max-width: 760px;
+  .hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  .hero-text p {
     font-size: 1rem;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   }
 
   section {
@@ -157,10 +154,10 @@
 <body>
 
 <header>
-  <div style="display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:12px;">
-    <img src="logo.png" alt="株式会社大棟工藝 ロゴ" style="height:48px; background:#fff; border-radius:6px; padding:2px;">
-    <h1 style="margin-bottom:0;">明石リフォームショップ　株式会社大棟工藝</h1>
+  <div style="margin-bottom:12px;">
+    <img src="logo.png" alt="株式会社大棟工藝 ロゴ" style="height:70px; background:#fff; padding:4px;">
   </div>
+  <h1>明石リフォームショップ　株式会社大棟工藝</h1>
   <nav>
     <ul>
       <li><a href="#home">HOME</a></li>
@@ -173,7 +170,8 @@
   </nav>
 </header>
 
-<div class="hero" id="home">
+<div class="hero" id="home"></div>
+<div class="hero-text">
   <p>
     明石市で不動産の売買・仲介、住宅のリフォーム・増改築・新築、店舗建築（各種ＳＨＯＰ）、家具の製作をおこなっております、株式会社大棟工藝です。<br>
     家具職人による自社工場でのオーダー家具製作、建具製作、中古住宅のリノベーション事業など、住宅のトータルサポートで対応しております。
